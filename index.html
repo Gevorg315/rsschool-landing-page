@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home — Resource Coffee House</title>
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body class="page__body">
+  <div class="page__container">
+    <header class="page__header header">
+      <span class="header__logo logo">
+        <img class="logo__img" src="img/logo.svg" width="100" height="60" alt="Resource Coffee House logo">
+      </span>
+      <button class="header__burger" type="button" aria-label="Open navigation">
+        <span class="visually-hidden">Open navigation</span>
+      </button>
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#favorite">Favorite coffee</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#apps">Mobile app</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#footer">Contact us</a>
+          </li>
+        </ul>
+        <!-- Theme Toggle Switch -->
+        <button class="header__theme-toggle theme-toggle" type="button" aria-label="Toggle theme">
+          <span class="theme-toggle__icon theme-toggle__icon--sun"></span>
+          <span class="theme-toggle__icon theme-toggle__icon--moon"></span>
+        </button>
+        <a class="nav__link nav__link--icon_cup" href="menu.html">Menu</a>
+      </nav>
+    </header>
+
+    <main class="page__main">
+      <h1 class="visually-hidden">Resource Coffee House: a haven for coffee, tea, and dessert enthusiasts</h1>
+      <section class="hero">
+        <video class="hero__video" autoplay muted loop playsinline poster="./img/hero-bg.jpg">
+          <source src="./video/hero-video.webm" type="video/webm">
+        </video>
+        <div class="hero__content">
+          <h2 class="heading heading--main heading--light"><span class="heading__accent">Enjoy</span> premium coffee
+            at our charming cafe</h2>
+          <p class="hero__desc">With its inviting atmosphere and delicious coffee options, the Coffee House Resource
+            is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their
+            favorite beverage.</p>
+          <a class="hero__btn" href="menu.html"><span class="hero__btn-text">Menu</span></a>
+        </div>
+      </section>
+
+      <section class="favorite" id="favorite">
+        <h2 class="favorite__heading heading">Choose your <span class="heading__accent">favorite</span> coffee</h2>
+        <div class="carousel">
+          <div class="carousel__window">
+            <ol class="carousel__slides-row">
+              <li class="carousel__slide slide">
+                <h3 class="slide__title">S’mores Frappuccino</h3>
+                <img class="slide__img" src="img/slides/slide-1.png" width="480" height="480"
+                  alt="A high cylindrical glass full of milky-brown drink topped with milk layer">
+                <p class="slide__desc">This new drink takes an espresso and mixes it with brown sugar and cinnamon
+                  before being topped with oat milk.</p>
+                <p class="slide__price">$5.50</p>
+              </li>
+              <li class="carousel__slide slide">
+                <h3 class="slide__title">Caramel Macchiato</h3>
+                <img class="slide__img" src="img/slides/slide-2.png" width="480" height="480"
+                  alt="A short glass containing a beverage with three distinct layers and milk foam on top">
+                <p class="slide__desc">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream
+                  under whipped thick foam.</p>
+                <p class="slide__price">$5.00</p>
+              </li>
+              <li class="carousel__slide slide">
+                <h3 class="slide__title">Ice coffee</h3>
+                <img class="slide__img" src="img/slides/slide-3.png" width="480" height="480"
+                  alt="A beverage of light brown hue served in a tall glass with ice cubes">
+                <p class="slide__desc">A popular summer drink that tones and invigorates. Prepared from coffee, milk
+                  and ice.</p>
+                <p class="slide__price">$4.50</p>
+              </li>
+            </ol>
+          </div>
+          <div class="carousel__controls">
+            <button class="carousel__btn carousel__btn--prev" type="button"><span class="visually-hidden">Previous
+                slide</span></button>
+            <button class="carousel__btn carousel__btn--next" type="button"><span class="visually-hidden">Next
+                slide</span></button>
+          </div>
+          <ol class="carousel__bars">
+            <li class="carousel__bar-container">
+              <span class="carousel__bar"></span>
+            </li>
+            <li class="carousel__bar-container">
+              <span class="carousel__bar"></span>
+            </li>
+            <li class="carousel__bar-container">
+              <span class="carousel__bar"></span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <h2 class="heading">Resource is <span class="heading__accent">the perfect and cozy place</span> where you can
+          enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
+        <ul class="about__list">
+          <li class="about__item">
+            <img class="about__img" src="img/about/about-1.jpg" width="726" height="726"
+              alt="Girl stirs coffee and smiles">
+          </li>
+          <li class="about__item">
+            <img class="about__img" src="img/about/about-2.jpg" width="726" height="726"
+              alt="Man holding a cup of coffee and looking at a laptop">
+          </li>
+          <li class="about__item">
+            <img class="about__img" src="img/about/about-3.jpg" width="726" height="726"
+              alt="Cup on a table decorated with a garland">
+          </li>
+          <li class="about__item">
+            <img class="about__img" src="img/about/about-4.jpg" width="726" height="726"
+              alt="Hugging couple with cups of coffee">
+          </li>
+        </ul>
+      </section>
+
+      <section class="apps" id="apps">
+        <div>
+          <h2 class="heading"><span class="heading__accent">Download</span> our apps to start ordering</h2>
+          <p class="apps__desc">Download the Resource app today and experience the comfort of ordering your favorite
+            coffee from wherever you are</p>
+          <ul class="apps__links">
+            <li>
+              <a class="apps__link apps__link--icon_apple" href="#">
+                <span class="apps__text">Available on the</span>
+                <span class="apps__distributor">App Store</span>
+              </a>
+            </li>
+            <li>
+              <a class="apps__link apps__link--icon_google" href="#">
+                <span class="apps__text">Available on</span>
+                <span class="apps__distributor">Google Play</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <img class="apps__img" src="img/mobile-screens.png" width="630" height="630"
+          alt="Two smartphones with the Resource Coffee House app on the screen">
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <h2 class="heading heading--light">Sip, Savor, Smile. <span class="heading__accent">It’s coffee time!</span>
+      </h2>
+      <section class="footer__socials socials">
+        <h3 class="visually-hidden">Join us on social networks</h3>
+        <ul class="socials__list">
+          <li>
+            <a class="socials__link socials__link--icon_twit" href="#">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a class="socials__link socials__link--icon_inst" href="#">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a class="socials__link socials__link--icon_fb" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footer__contacts contacts">
+        <h3 class="contacts__title">Contact us</h3>
+        <address class="contacts__address">
+          <a class="contacts__item contacts__item--icon_location" href="https://maps.app.goo.gl/D8TFF5PnfE8yj8S8A"
+            target="_blank" rel="noopener noreferrer">8558 Green Rd., LA</a>
+          <a class="contacts__item contacts__item--icon_phone" href="tel:+16035550123">+1 (603) 555-0123</a>
+          <span class="contacts__item contacts__item--icon_time">Mon-Sat: 9:00&nbsp;AM – 23:00&nbsp;PM</span>
+        </address>
+      </section>
+    </footer>
+  </div>
+  <script src="./scripts/main.js" type="module"></script>
+</body>
+
+</html>
