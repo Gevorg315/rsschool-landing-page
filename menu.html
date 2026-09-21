@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu — Resource Coffee House</title>
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body class="page__body">
+    <div class="page__container">
+        <header class="page__header header">
+            <a class="header__logo logo" href="index.html">
+                <img class="logo__img" src="img/logo.svg" width="100" height="60" alt="Resource Coffee House logo">
+            </a>
+            <button class="header__burger" type="button" aria-label="Open navigation">
+                <span class="visually-hidden">Open navigation</span>
+            </button>
+
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="index.html#favorite">Favorite coffee</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="index.html#apps">Mobile app</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#footer">Contact us</a>
+                    </li>
+                </ul>
+                <!-- Theme Toggle Switch -->
+                 <button class="header__theme-toggle theme-toggle" type="button" aria-label="Toggle theme">
+                    <span class="theme-toggle__icon theme-toggle__icon--sun"></span>
+                    <span class="theme-toggle__icon theme-toggle__icon--moon"></span>
+                 </button>
+                <span class="nav__link nav__link--icon_cup nav__link--active">Menu</span>
+                
+            </nav>
+        </header>
+
+        <main class="page__main">
+            <h1 class="visually-hidden">Menu: Resource Coffee House</h1>
+            <section class="menu">
+                <h2 class="menu__heading heading">Behind each of our cups hides an <span class="heading__accent">amazing
+                        surprise</span></h2>
+                <ul class="menu__categories">
+                    <li>
+                        <button class="menu__btn-category menu__btn-category--icon_coffee menu__btn-category--active"
+                            type="button">Coffee</button>
+                    </li>
+                    <li>
+                        <button class="menu__btn-category menu__btn-category--icon_tea" type="button">Tea</button>
+                    </li>
+                    <li>
+                        <button class="menu__btn-category menu__btn-category--icon_dessert"
+                            type="button">Dessert</button>
+                    </li>
+                </ul>
+                <ul class="menu__list"></ul>
+                <button class="menu__btn-load" type="button">
+                    <span class="visually-hidden">Load more menu items</span>
+                </button>
+            </section>
+        </main>
+
+        <footer class="footer" id="footer">
+            <h2 class="heading heading--light">Sip, Savor, Smile. <span class="heading__accent">It’s coffee time!</span>
+            </h2>
+            <section class="footer__socials socials">
+                <h3 class="visually-hidden">Join us on social networks</h3>
+                <ul class="socials__list">
+                    <li>
+                        <a class="socials__link socials__link--icon_twit" href="#">
+                            <span class="visually-hidden">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="socials__link socials__link--icon_inst" href="#">
+                            <span class="visually-hidden">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="socials__link socials__link--icon_fb" href="#">
+                            <span class="visually-hidden">Facebook</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="footer__contacts contacts">
+                <h3 class="contacts__title">Contact us</h3>
+                <address class="contacts__address">
+                    <a class="contacts__item contacts__item--icon_location"
+                        href="https://maps.app.goo.gl/D8TFF5PnfE8yj8S8A" target="_blank" rel="noopener noreferrer">8558
+                        Green Rd., LA</a>
+                    <a class="contacts__item contacts__item--icon_phone" href="tel:+16035550123">+1 (603) 555-0123</a>
+                    <span class="contacts__item contacts__item--icon_time">Mon-Sat: 9:00&nbsp;AM – 23:00&nbsp;PM</span>
+                </address>
+            </section>
+        </footer>
+    </div>
+
+    <dialog class="modal" aria-labelledby="modal-title">
+        <section class="modal__content">
+            <h2 class="visually-hidden" id="modal-title">Calculate menu item cost</h2>
+            <div class="modal__img-wrapper">
+                <img class="modal__img" src="img/menu/coffee/coffee-1.jpg" width="340" height="340" alt="">
+            </div>
+            <form class="modal__form" action="filler" method="get">
+                <h3 class="modal__form-title">filler</h3>
+                <p class="modal__desc"></p>
+                <fieldset class="modal__fieldset">
+                    <legend class="modal__legend">Size</legend>
+                    <ul class="modal__list modal__list--size"></ul>
+                </fieldset>
+                <fieldset class="modal__fieldset">
+                    <legend class="modal__legend">Additives</legend>
+                    <ul class="modal__list modal__list--additives"></ul>
+                </fieldset>
+                <p class="modal__output-wrapper">
+                    <span class="modal__output-label">Total:</span>
+                    <output class="modal__output" name="cost"></output>
+                </p>
+                <p class="modal__info">The cost is not final. Download our mobile app to see the final price and place
+                    your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+                <button class="modal__close-button" type="button">Close</button>
+            </form>
+        </section>
+    </dialog>
+
+    <template id="card">
+        <li class="card">
+            <div class="card__text-wrapper">
+                <h3 class="card__title"></h3>
+                <p class="card__desc"></p>
+                <p class="card__price"></p>
+            </div>
+            <div class="card__img-wrapper">
+                <img class="card__img" src="" width="340" height="340" alt="">
+            </div>
+        </li>
+    </template>
+
+    <template id="modal-item">
+        <li class="modal__item">
+            <label class="rad-check">
+                <input class="rad-check__input" type="" name="">
+                <span class="rad-check__text"></span>
+            </label>
+        </li>
+    </template>
+    <script src="./scripts/main.js" type="module"></script>
+</body>
+
+</html>
