@@ -1,10 +1,8 @@
 import { addBurgerHandlers } from "./burger.js";
 import { initTheme } from "./theme.js";
 
-// Инициализация темы при загрузке
 initTheme();
 
-// Инициализация бургер-меню
 addBurgerHandlers();
 
 if (document.querySelector(".carousel") !== null) {
